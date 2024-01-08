@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="TopicCell" customModule="News_APP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="72"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="72"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VGK-io-jQm">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="72"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fo6-Rz-g4F">
+                                <rect key="frame" x="10" y="26" width="140" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Vw-wj-X2O">
+                                <rect key="frame" x="132" y="50" width="24" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="sPg-o5-tNj"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="checkmark.circle" catalog="system" renderingMode="hierarchical-single">
+                                        <hierarchicalColors>
+                                            <color systemColor="labelColor"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="checkButtonAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="acL-yn-91r"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.95686274509803915" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fo6-Rz-g4F" secondAttribute="trailing" constant="10" id="2s3-6g-hcs"/>
+                            <constraint firstItem="6Vw-wj-X2O" firstAttribute="top" secondItem="fo6-Rz-g4F" secondAttribute="bottom" constant="4" id="9Gm-pw-HzY"/>
+                            <constraint firstAttribute="bottom" secondItem="6Vw-wj-X2O" secondAttribute="bottom" constant="4" id="VEX-MC-LIq"/>
+                            <constraint firstItem="fo6-Rz-g4F" firstAttribute="leading" secondItem="VGK-io-jQm" secondAttribute="leading" constant="10" id="Zff-MG-mz4"/>
+                            <constraint firstItem="fo6-Rz-g4F" firstAttribute="centerX" secondItem="VGK-io-jQm" secondAttribute="centerX" id="lWq-6c-wCd"/>
+                            <constraint firstAttribute="bottom" secondItem="fo6-Rz-g4F" secondAttribute="bottom" constant="26" id="olW-yJ-fD0"/>
+                            <constraint firstItem="fo6-Rz-g4F" firstAttribute="top" secondItem="VGK-io-jQm" secondAttribute="top" constant="26" id="tOz-YA-zhb"/>
+                            <constraint firstAttribute="trailing" secondItem="6Vw-wj-X2O" secondAttribute="trailing" constant="4" id="yD5-yb-wtz"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="30"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" red="0.95294117647058818" green="0.95686274509803915" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="VGK-io-jQm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9hm-zH-hCY"/>
+                <constraint firstAttribute="trailing" secondItem="VGK-io-jQm" secondAttribute="trailing" id="Dxl-iN-SuS"/>
+                <constraint firstItem="VGK-io-jQm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="IfL-Sp-uiv"/>
+                <constraint firstAttribute="bottom" secondItem="VGK-io-jQm" secondAttribute="bottom" id="xbw-J7-w2B"/>
+            </constraints>
+            <size key="customSize" width="195" height="87"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <integer key="value" value="20"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="cellView" destination="VGK-io-jQm" id="OMF-tz-qha"/>
+                <outlet property="checkButton" destination="6Vw-wj-X2O" id="fUV-XK-leU"/>
+                <outlet property="topicLabel" destination="fo6-Rz-g4F" id="HJC-Ex-Rfb"/>
+            </connections>
+            <point key="canvasLocation" x="106.87022900763358" y="32.394366197183103"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="checkmark.circle" catalog="system" width="128" height="123"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29803921570000003" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
