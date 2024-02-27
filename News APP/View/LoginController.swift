@@ -10,8 +10,6 @@ import UIKit
 class LoginController: UIViewController {
     
     var users = [User]()
-    //    var person = [User]()
-    
     let manager = UserManager()
     
     @IBOutlet weak var donTLabel: UILabel!
