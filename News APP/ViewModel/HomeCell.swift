@@ -12,9 +12,7 @@ protocol BookmarkDelegate {
     func addButtonAction(index: Int)
 }
 class HomeCell: UICollectionViewCell {
-    
-    let manager = SaveFileManager()
-    
+        
     @IBOutlet weak var homeLabel: UILabel!
     @IBOutlet weak var homeImage: UIImageView!
     @IBOutlet weak var homeView: UIView!

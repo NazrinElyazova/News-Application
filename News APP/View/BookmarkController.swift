@@ -30,14 +30,14 @@ class BookmarkController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
 }
 
 extension BookmarkController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        info.count
+        print(info.count)
+        return info.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -55,6 +55,4 @@ extension BookmarkController: UICollectionViewDelegate, UICollectionViewDataSour
             self.collection.reloadData()
         }
     }
-    
-    
 }
